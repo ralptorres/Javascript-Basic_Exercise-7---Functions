@@ -82,3 +82,16 @@ console.log(convertLength(5, "miles", "ft"));
 console.log(convertLength(5, "km", "ft"));
 
 console.log(convertLength(5, "lbs", "lbs"));
+
+// CALCULATOR
+
+let calculation = "";
+
+function number(number) {
+  calculation += number;
+  console.log(calculation);
+}
+
+function result(result) {
+  return (calculation = eval(calculation));
+}
