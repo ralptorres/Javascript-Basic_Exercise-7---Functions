@@ -95,3 +95,31 @@ function number(number) {
 function result(result) {
   return (calculation = eval(calculation));
 }
+
+// CART QUANTITY
+
+let cartQuantity = 0;
+
+function updateCartQuantity(number, greaterThan) {
+  if (cartQuantity >= 10) {
+    alert("The cart is full!");
+    return;
+  } else if (cartQuantity > greaterThan) {
+    alert("You can only add maximum of 10 items");
+  } else {
+    cartQuantity += number;
+    console.log(cartQuantity);
+  }
+}
+
+function removeCartQuantity(number, lessThan) {
+  if (cartQuantity <= 0) {
+    alert("Not enough items in the cart");
+    return;
+  } else if (cartQuantity < lessThan) {
+    alert(`Only ${cartQuantity} item remaining.`);
+  } else {
+    cartQuantity -= number;
+    console.log(cartQuantity);
+  }
+}

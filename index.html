@@ -37,6 +37,15 @@
       </button>
       <button
         onclick="
+         number(`.`);
+    
+
+"
+      >
+        .
+      </button>
+      <button
+        onclick="
          number(` + `);
     
 
@@ -156,6 +165,109 @@
         Clear
       </button>
     </p>
+
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+    <div>
+      <button
+        onclick="
+        console.log(cartQuantity);
+        
+        "
+      >
+        Show Quantity
+      </button>
+      <button
+        onclick="
+
+        
+
+            updateCartQuantity(1)
+
+    "
+      >
+        Add to Cart
+      </button>
+      <button
+        onclick="
+
+            updateCartQuantity(2, 8)
+       
+    "
+      >
+        +2
+      </button>
+      <button
+        onclick="
+        
+        updateCartQuantity(3, 7)
+
+      
+    "
+      >
+        +3
+      </button>
+
+      <button
+        onclick="
+
+        updateCartQuantity(4, 6)
+
+       
+    "
+      >
+        +4
+      </button>
+      <button
+        onclick="
+        updateCartQuantity(5, 5)
+
+   
+"
+      >
+        +5
+      </button>
+
+      <button
+        onclick="
+
+            removeCartQuantity (1)
+       
+    "
+      >
+        Remove from Cart
+      </button>
+
+      <button
+        onclick="
+
+            removeCartQuantity (2,2)
+    
+"
+      >
+        -2
+      </button>
+      <button
+        onclick="
+         removeCartQuantity (3,3)
+   
+"
+      >
+        -3
+      </button>
+
+      <button
+        onclick="
+        cartQuantity = 0
+        alert('The cart was reset.');
+        console.log(cartQuantity);
+        
+    "
+      >
+        Reset Cart
+      </button>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
